@@ -1,0 +1,69 @@
+{
+  "users": [
+    { "id": 1, "name": "Rohil Visariya", "email": "rohil.visariya@xtreme-media.in", "designation":"sr.executive", "userType" : "developer" },
+	{ "id": 2, "name": "Amit Phadtare", "email": "amit.phadtare@xtreme-media.in", "designation":"manager", "userType" : "developer" },
+	{ "id": 3, "name": "Vanita Ubale", "email": "vanita.ubale@xtreme-media.in", "designation":"assist.manager", "userType" : "tester" }
+  ],
+  "software_types" : [
+	{ 
+		"id" : 1, "name" : "Players", "players_platform" : [
+			{ "pid": 1, "name": "Android" },
+			{ "pid": 2, "name": "Windows" },
+			{ "pid": 3, "name": "Webclients" }
+		]
+	},
+	{ 
+		"id" : 2, "name" : "Servers", "servers_platform" : [
+			{"pid" : 1, "name" : "PHP"},
+			{"pid" : 2, "name" : "React"},
+			{"pid" : 3, "name" : "Python"}
+		]
+	},
+	{ 
+		"id" : 3, "name" : "Others" , "others_platform" : [
+			{"pid" : 1, "name" : ""}
+		]
+	}
+  ],
+  "releases": [
+	{ 
+		"release_id" : 1, 
+		"release_type" : ["Scheduled", "Major"],
+		"sprint" : "Sprint-020420", 
+		"sprint_from_date" : "02-04-2020", 
+		"sprint_to_date" : "15-04-2020" ,
+		"scrum_master" : "Rohil Visariya",
+		"release_data" : [
+			{
+				"software_type": 1, 
+				"platform" : 1, 
+				"name" : "XM Client", 
+				"version": "1.2", 
+				"dev_owner" : 1, 
+				"test_owner" : 3, 
+				"features" : [
+					"Feature 1",
+					"Feature 2",
+					"Feature 3"
+				]
+			},
+			{
+				"software_type": 2, 
+				"platform" : 1, 
+				"name" : "CMS", 
+				"version": "2.2", 
+				"dev_owner" : 2, 
+				"test_owner" : 3, 
+				"features" : [
+					"Feature 1",
+					"Feature 2",
+					"Feature 3"
+				]
+			}
+		],
+		"installation_notes" : "",
+		"additional_items" : [{"player_logs" : ""}, {"db_optimisation" : ""}],
+		"sign" : [{"team_lead":"yes"}, {"qa_lead":"yes"}, {"dss_head":"yes"}, {"cto":""}, {"intstallation_head":""},{"director" : ""}]
+	}
+  ]
+}
